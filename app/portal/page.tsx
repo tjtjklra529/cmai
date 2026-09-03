@@ -1,4 +1,5 @@
 import { ArrowLeft, ChevronRight, FileLock2 } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
@@ -9,8 +10,8 @@ export default function PortalPage() {
       <p className="section-index">PARTICIPANT PORTAL / PRE-LAUNCH</p>
       <h1>Portal offline.</h1>
       <p>The participant portal will open with account registration. No account service is connected yet.</p>
-      <Button asChild className="primary-cta"><a href="/auth/">View account status <ChevronRight /></a></Button>
-      <a className="portal-home-link" href="/"><ArrowLeft /> Return to event page</a>
+      <Button asChild className="primary-cta"><Link href="/auth/">View account status <ChevronRight /></Link></Button>
+      <Link className="portal-home-link" href="/"><ArrowLeft /> Return to event page</Link>
     </main>
   );
 }

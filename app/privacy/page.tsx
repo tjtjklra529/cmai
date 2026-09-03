@@ -1,14 +1,15 @@
 import { ArrowLeft, Database, EyeOff, LockKeyhole, Terminal, Trash2 } from "lucide-react";
+import Link from "next/link";
 
 export default function PrivacyPage() {
   return (
     <main className="legal-shell">
       <header className="legal-header">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
           <span className="brand-mark"><Terminal /></span>
           <span>CHEATMEETS<span>AI</span></span>
-        </a>
-        <a href="/"><ArrowLeft /> Event home</a>
+        </Link>
+        <Link href="/"><ArrowLeft /> Event home</Link>
       </header>
 
       <article className="legal-content">

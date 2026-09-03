@@ -29,9 +29,9 @@ const tracks = [
   {
     number: "02",
     icon: Crosshair,
-    title: "Arena Systems",
-    copy: "Prototype client-side assistance for movement, combat, or resource challenges inside the supplied tournament build.",
-    tags: ["Client mod", "Telemetry", "Control"],
+    title: "Evasion Engineering",
+    copy: "Build client-side assistance, packet shaping, and event-only spoofing that survives the supplied detector stack inside the tournament build.",
+    tags: ["Client mod", "Spoofing", "Resource pack"],
   },
   {
     number: "03",
@@ -43,36 +43,43 @@ const tracks = [
 ];
 
 const judging = [
-  { label: "Arena performance", value: 35 },
-  { label: "Adaptation & originality", value: 30 },
-  { label: "Safety & containment", value: 20 },
-  { label: "Technical presentation", value: 15 },
+  { label: "Detector evasion", value: 30 },
+  { label: "Arena performance", value: 25 },
+  { label: "Simulated-admin evasion", value: 15 },
+  { label: "Containment & reliability", value: 15 },
+  { label: "Review & reproducibility", value: 15 },
 ];
 
 const phases = [
   {
     step: "01",
     title: "Applications",
-    status: "Opening soon",
-    copy: "Account registration and concept submissions will open after the official rules go live.",
+    status: "7–20 September 2026",
+    copy: "Entrants accept the rules and consent notice, identify every tester, and submit a short technical concept.",
   },
   {
     step: "02",
     title: "Qualifier pack",
-    status: "Date pending",
-    copy: "Selected entrants receive the exact client, isolated server environment, API limits, and scoring specification.",
+    status: "21 September 2026",
+    copy: "Accepted entrants receive the signed Fabric client, private server access, exact detector build, test map, and scoring specification.",
   },
   {
     step: "03",
-    title: "Closed arena",
-    status: "Date pending",
-    copy: "Entries run against the same challenge seed and detector suite. Every run is replayed and reviewed.",
+    title: "Source freeze",
+    status: "18 October 2026",
+    copy: "Source, build instructions, dependency lockfiles, hashes, and final mod/resource-pack artifacts are submitted for review.",
   },
   {
     step: "04",
+    title: "Closed arena",
+    status: "24–25 October 2026",
+    copy: "Every entry runs against the same challenge seed, detector configuration, and simulated-admin scenarios. Runs are logged and replayable.",
+  },
+  {
+    step: "05",
     title: "Final showcase",
-    status: "Date pending",
-    copy: "Finalists explain their systems, publish a safe technical summary, and discover the winner reward.",
+    status: "31 October 2026",
+    copy: "Finalists explain their systems, publish a safe technical summary, and the Season Zero Champion Cape is awarded.",
   },
 ];
 
@@ -91,28 +98,29 @@ export default function Home() {
           <a href="#challenge">Challenge</a>
           <a href="#protocol">Protocol</a>
           <a href="#timeline">Timeline</a>
+          <a href="/rules/">Rules</a>
           <a href="#faq">FAQ</a>
         </nav>
 
         <Button asChild variant="outline" size="sm" className="account-button">
-          <a href="/auth/"><UserRound /> Account status</a>
+          <a href="/rules/"><UserRound /> Rules v1.0</a>
         </Button>
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <div className="eyebrow"><span>CMAI / SEASON ZERO</span><span>2026</span></div>
-          <h1>Can your AI<br />outplay the <em>detector?</em></h1>
+          <div className="eyebrow"><span>RULES v1.0 / FINAL</span><span>03 SEP 2026</span></div>
+          <h1>Beat the arena.<br />Outplay the <em>detector.</em></h1>
           <p className="hero-lede">
-            CheatMeetsAI is a closed Minecraft AI-mod challenge where builders
-            and defenders compete inside a purpose-built, organizer-controlled
-            sandbox.
+            CheatMeetsAI Season Zero is an authorized Minecraft AI-mod challenge
+            running on a private organizer-controlled server with a supplied,
+            handshake-locked tournament client.
           </p>
           <div className="hero-actions">
             <Button asChild size="lg" className="primary-cta">
-              <a href="/auth/">Check account status <ArrowDownRight /></a>
+              <a href="/rules/">Read final rules <ArrowDownRight /></a>
             </Button>
-            <span className="opening-note"><LockKeyhole /> Applications opening soon</span>
+            <span className="opening-note"><LockKeyhole /> Applications open 7 September</span>
           </div>
           <p className="containment-note">
             <ShieldCheck /> No public servers. No unsuspecting players. Every run stays inside the event environment.
@@ -132,24 +140,25 @@ export default function Home() {
             </div>
             <div className="console-lines">
               <p><span>EVENT_ID</span><b>CMAI/SEASON-0</b></p>
-              <p><span>FORMAT</span><b>REMOTE / CLOSED</b></p>
-              <p><span>PLATFORM</span><b>MINECRAFT JAVA</b></p>
-              <p><span>ENVIRONMENT</span><b>ISOLATED</b></p>
-              <p><span>WINNER REWARD</span><b className="classified">CLASSIFIED</b></p>
+              <p><span>CLIENT</span><b>MC 26.2 / FABRIC 0.19.3</b></p>
+              <p><span>SERVER</span><b>PAPER 26.2 / ALLOWLIST</b></p>
+              <p><span>DETECTOR</span><b>GRIMAC 2.3.73</b></p>
+              <p><span>SCORING BRIDGE</span><b>JUDGEBRIDGE 1.0.0</b></p>
+              <p><span>WINNER REWARD</span><b className="classified">CHAMPION CAPE</b></p>
             </div>
           </div>
           <div className="console-footer">
-            <span>SPECIFICATION DRAFT 0.7</span>
+            <span>RULESET CMAI-S0-R1.0</span>
             <span><i /> UPLINK STABLE</span>
           </div>
         </div>
       </section>
 
       <section className="fact-strip" aria-label="Event facts">
-        <div><span>FORMAT</span><strong>Solo or team</strong></div>
-        <div><span>LOCATION</span><strong>Remote</strong></div>
-        <div><span>ACCESS</span><strong>Invite qualifier</strong></div>
-        <div><span>REWARD</span><strong><Sparkles /> Secret reveal</strong></div>
+        <div><span>FORMAT</span><strong>Solo or duo</strong></div>
+        <div><span>SERVER</span><strong>Private allowlist</strong></div>
+        <div><span>DETECTOR</span><strong>GrimAC + JudgeBridge</strong></div>
+        <div><span>REWARD</span><strong><Sparkles /> Champion Cape</strong></div>
       </section>
 
       <section className="section" id="challenge">
@@ -179,15 +188,15 @@ export default function Home() {
           <p className="section-index">02 / EVENT PROTOCOL</p>
           <h2>Real competition.<br />Contained arena.</h2>
           <p>
-            The challenge is designed as authorized red-team research. Entrants
-            receive a locked tournament environment and an exact ruleset before
-            building begins.
+            Every scored run uses the supplied Fabric 26.2 client and the same
+            organizer-controlled Paper 26.2 server. JudgeBridge 1.0.0 records
+            GrimAC alerts, arena performance, and simulated-admin detections.
           </p>
           <ul>
-            <li><Check /> Source code and reproducible builds are required.</li>
-            <li><Check /> Network access is disabled during scored runs.</li>
-            <li><Check /> Public or third-party server testing is prohibited.</li>
-            <li><Check /> Malicious payloads, data access, and persistence are disqualifying.</li>
+            <li><Check /> Features activate only after the signed CMAI-Arena/1 handshake.</li>
+            <li><Check /> Event-only spoofing is permitted and scored inside the supplied environment.</li>
+            <li><Check /> Source review, reproducible builds, logs, and replayable runs are required.</li>
+            <li><Check /> Obfuscation, persistence, credential access, OS interference, and public-server testing are disqualifying.</li>
           </ul>
         </div>
 
@@ -204,7 +213,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p><Braces /> Final weights may change before applications open. Published rules will be authoritative.</p>
+          <p><Braces /> Fixed weights under RULES v1.0. A disqualification overrides the numerical score.</p>
         </div>
       </section>
 
@@ -228,14 +237,15 @@ export default function Home() {
       <section className="reward-section">
         <div className="reward-art" aria-hidden="true"><Box /><span /><span /></div>
         <div className="reward-copy">
-          <p className="section-index">WINNER REWARD / ENCRYPTED</p>
-          <h2>Not cash.<br />Still worth winning.</h2>
+          <p className="section-index">THE BIG REWARD SURPRISE / REVEALED</p>
+          <h2>The Season Zero<br />Champion Cape.</h2>
           <p>
-            The Season Zero winner reward is being finalized. Expect a small,
-            event-exclusive surprise rather than a cash prize. The exact reward
-            will be published before applications open.
+            The winner receives a unique animated Champion Cape in the supplied
+            tournament client, a permanent winner badge on the event site, and
+            first entry to the next CMAI arena. It is an event cosmetic—not an
+            official Mojang cape—and no cash prize is promised.
           </p>
-          <span className="reward-chip"><Sparkles /> REVEAL PENDING</span>
+          <span className="reward-chip"><Sparkles /> GUARANTEED NON-CASH REWARD</span>
         </div>
       </section>
 
@@ -247,19 +257,19 @@ export default function Home() {
         <div className="faq-list">
           <details>
             <summary>Is CheatMeetsAI a real event?<ChevronRight /></summary>
-            <p>Yes. Season Zero is in pre-launch. Dates, official rules, eligibility, and applications will be published before entries are accepted.</p>
+            <p>Yes. RULES v1.0 fixes the platform, detector stack, dates, safety limits, scoring, evidence requirements, and winner reward.</p>
           </details>
           <details>
             <summary>Can entries be tested on normal servers?<ChevronRight /></summary>
-            <p>No. All development and scoring must stay inside the supplied offline or organizer-controlled environment. Unauthorized server use results in disqualification.</p>
+            <p>No. The mod must fail closed without the signed event-server handshake. Public or third-party server use results in disqualification.</p>
           </details>
           <details>
             <summary>Do I need to publish my source code?<ChevronRight /></summary>
-            <p>Judges must be able to inspect and reproduce the submitted build. Public release is not currently required; the final rules will specify what may be shared after the event.</p>
+            <p>Judges receive the full unobfuscated source, dependency lockfiles, build instructions, and artifact hashes. Public release is not required.</p>
           </details>
           <details>
             <summary>What does the winner receive?<ChevronRight /></summary>
-            <p>A small event-exclusive surprise. A custom cosmetic reward, such as a cape, is being considered, but nothing is promised until the official reveal.</p>
+            <p>A unique animated Season Zero Champion Cape for the supplied tournament client, a permanent site badge, and first entry to the next arena. It is not an official Mojang cape or a cash prize.</p>
           </details>
         </div>
       </section>
@@ -270,16 +280,16 @@ export default function Home() {
           <h2>Build responsibly.<br /><span>Compete relentlessly.</span></h2>
         </div>
         <div className="closing-status">
-          <span><i /> PRE-LAUNCH ACTIVE</span>
-          <p>Account registration will open after the official rules, reward, and identity provider are confirmed.</p>
-          <Button asChild className="secondary-cta"><a href="/auth/">View account status <ChevronRight /></a></Button>
+          <span><i /> RULES v1.0 PUBLISHED</span>
+          <p>Read the complete permitted-feature list, containment contract, scoring model, consent terms, and fixed schedule.</p>
+          <Button asChild className="secondary-cta"><a href="/rules/">Open final rules <ChevronRight /></a></Button>
         </div>
       </section>
 
       <footer>
         <a className="brand footer-brand" href="#top"><span className="brand-mark"><Terminal /></span><span>CHEATMEETS<span>AI</span></span></a>
         <p>Independent community event. Not affiliated with Mojang Studios or Microsoft.</p>
-        <div className="footer-links"><a href="/privacy/">Privacy</a><span>© 2026 CheatMeetsAI</span></div>
+        <div className="footer-links"><a href="/rules/">Rules v1.0</a><a href="/privacy/">Privacy</a><span>© 2026 CheatMeetsAI</span></div>
       </footer>
     </main>
   );

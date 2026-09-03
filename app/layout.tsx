@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "CheatMeetsAI — Season Zero",
     template: "%s — CheatMeetsAI",
   },
-  description: "A closed Minecraft AI red-team challenge for builders and defenders.",
+  description: "An authorized Minecraft 26.2 AI-mod tournament on a private, organizer-controlled arena.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
