@@ -24,7 +24,7 @@ No authentication provider has been selected or connected yet.
 - unobfuscated source review, reproducible builds, signed logs, and replayable scored runs;
 - guaranteed non-cash winner reward: the Season Zero Champion Cape in the supplied tournament client.
 
-The qualifier client, exact detector configuration, and private arena access are scheduled for accepted entrants on 21 September 2026. The complete rules are available at `/rules/` and `public/RULES_v1.0.md`.
+Applications open on 28 December 2026. The qualifier client, exact detector configuration, and private arena access are scheduled for accepted entrants on 11 January 2027. The complete rules are available at `/rules/` and `public/RULES_v1.0.md`.
 
 ## Local development
 

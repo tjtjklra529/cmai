@@ -54,31 +54,31 @@ const phases = [
   {
     step: "01",
     title: "Applications",
-    status: "7–20 September 2026",
+    status: "28 December 2026 – 10 January 2027",
     copy: "Entrants accept the rules and consent notice, identify every tester, and submit a short technical concept.",
   },
   {
     step: "02",
     title: "Qualifier pack",
-    status: "21 September 2026",
+    status: "11 January 2027",
     copy: "Accepted entrants receive the signed Fabric client, private server access, exact detector build, test map, and scoring specification.",
   },
   {
     step: "03",
     title: "Source freeze",
-    status: "18 October 2026",
+    status: "7 February 2027",
     copy: "Source, build instructions, dependency lockfiles, hashes, and final mod/resource-pack artifacts are submitted for review.",
   },
   {
     step: "04",
     title: "Closed arena",
-    status: "24–25 October 2026",
+    status: "13–14 February 2027",
     copy: "Every entry runs against the same challenge seed, detector configuration, and simulated-admin scenarios. Runs are logged and replayable.",
   },
   {
     step: "05",
     title: "Final showcase",
-    status: "31 October 2026",
+    status: "20 February 2027",
     copy: "Finalists explain their systems, publish a safe technical summary, and the Season Zero Champion Cape is awarded.",
   },
 ];
@@ -120,7 +120,7 @@ export default function Home() {
             <Button asChild size="lg" className="primary-cta">
               <a href="/rules/">Read final rules <ArrowDownRight /></a>
             </Button>
-            <span className="opening-note"><LockKeyhole /> Applications open 7 September</span>
+            <span className="opening-note"><LockKeyhole /> Applications open 28 December 2026</span>
           </div>
           <p className="containment-note">
             <ShieldCheck /> No public servers. No unsuspecting players. Every run stays inside the event environment.

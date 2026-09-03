@@ -66,11 +66,11 @@ const scoreRows = [
 
 const dates = [
   ["03 SEP 2026", "Rules v1.0 published"],
-  ["07–20 SEP 2026", "Applications and consent"],
-  ["21 SEP 2026", "Qualifier pack and private arena access"],
-  ["18 OCT 2026 / 18:00 UTC", "Source and artifact freeze"],
-  ["24–25 OCT 2026", "Closed scored arena"],
-  ["31 OCT 2026 / 18:00 UTC", "Final showcase and award"],
+  ["28 DEC 2026 – 10 JAN 2027", "Applications and consent"],
+  ["11 JAN 2027", "Qualifier pack and private arena access"],
+  ["07 FEB 2027 / 18:00 UTC", "Source and artifact freeze"],
+  ["13–14 FEB 2027", "Closed scored arena"],
+  ["20 FEB 2027 / 18:00 UTC", "Final showcase and award"],
 ];
 
 export default function RulesPage() {
@@ -152,7 +152,7 @@ export default function RulesPage() {
           <section className="rule-section" id="rule-02">
             <div className="rule-heading"><span>02</span><Server /><h2>Organizer-controlled tournament stack</h2></div>
             <div className="rule-copy">
-              <p>The competition runs only on infrastructure operated by the organizer. The network address is withheld from the public and issued to accepted entrants in the signed qualifier pack on 21 September 2026.</p>
+              <p>The competition runs only on infrastructure operated by the organizer. The network address is withheld from the public and issued to accepted entrants in the signed qualifier pack on 11 January 2027.</p>
               <dl className="spec-list">
                 <div><dt>Game</dt><dd>Minecraft: Java Edition 26.2</dd></div>
                 <div><dt>Client loader</dt><dd>Fabric Loader 0.19.3 on Java 25</dd></div>

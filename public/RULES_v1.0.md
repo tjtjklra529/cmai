@@ -17,7 +17,7 @@ CheatMeetsAI Season Zero is an authorized Minecraft red-team tournament. Every e
 
 ## 2. Organizer-controlled tournament stack
 
-Every test and scored run occurs on infrastructure operated by the event organizer. The server address is not public. Accepted entrants receive the signed client and arena access in the qualifier pack on 21 September 2026.
+Every test and scored run occurs on infrastructure operated by the event organizer. The server address is not public. Accepted entrants receive the signed client and arena access in the qualifier pack on 11 January 2027.
 
 | Component | Fixed Season Zero version |
 | --- | --- |
@@ -107,11 +107,11 @@ All deadlines use UTC.
 | Date | Event |
 | --- | --- |
 | 3 September 2026 | Final Rules v1.0 published |
-| 7–20 September 2026 | Applications and consent |
-| 21 September 2026 | Qualifier pack and private arena access |
-| 18 October 2026, 18:00 UTC | Source and artifact freeze |
-| 24–25 October 2026 | Closed scored arena |
-| 31 October 2026, 18:00 UTC | Final showcase and award |
+| 28 December 2026–10 January 2027 | Applications and consent |
+| 11 January 2027 | Qualifier pack and private arena access |
+| 7 February 2027, 18:00 UTC | Source and artifact freeze |
+| 13–14 February 2027 | Closed scored arena |
+| 20 February 2027, 18:00 UTC | Final showcase and award |
 
 A schedule change requires a numbered rules amendment published to every accepted entrant. Silent changes are not valid.
 
